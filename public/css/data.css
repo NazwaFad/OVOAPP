@@ -1,0 +1,94 @@
+body {
+    background-color: whitesmoke;
+}
+
+.boxstartup {
+    background-color: white;
+    position: absolute;
+    height: auto;
+    width: 1500px;
+    margin-top: -50px;
+    margin-left: 175px;
+    border-radius: 20px;
+}
+
+.box2 {
+    background-color: white;
+    margin-top: 0px;
+}
+
+.secbody1 {
+    background-image: url("/Assets/ovoBackgroundhome.png");
+    height: auto;
+    width: auto;
+    margin-top: -20px;
+}
+
+#ovo {
+    font-size: 100px;
+    margin-top: 250px;
+}
+
+#ovohome {
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: 35px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.btn {
+    border-radius: 10%;
+}
+
+.bell {
+    margin-top: -80px;
+    margin-right: 20px;
+}
+
+.fonts {
+    margin-left: 40px;
+}
+
+.saldo {
+    margin-left: 65px;
+    margin-top: -50px;
+    font-size: 40px;
+}
+
+.topup {
+    padding-top: 25px;
+    margin-left: -50px;
+}
+
+.p-1 {
+    margin-top: 30px;
+    margin-left: 300px;
+}
+
+.pln {
+    margin-top: 0px;
+    padding-top: 30px;
+    margin-left: -50px;
+}
+
+.p-2 {
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+.bpjs {
+    margin-left: -50px;
+}
+
+.p-3 {
+    margin-left: 200px;
+}
+
+.lineup1 {
+    background-color: white;
+}
