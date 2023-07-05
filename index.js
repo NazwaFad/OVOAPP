@@ -9,7 +9,7 @@ const port = 3000;
 const app = express();
 
 const mongoose = require("mongoose")
-var connectionUrl = "mongodb+srv://NazwaF535210101:Kebayakan12@ovo.vhh0gub.mongodb.net/"
+var connectionUrl = "mongodb://127.0.0.1:27017/ovo"
 
 
 app.use(express.json());
@@ -42,17 +42,15 @@ app.get( '/register', (req,res) =>{
     res.render('register',{title: 'register' });
 });
 
-app.get( '/index', (req,res) =>{
-    res.render('index',{title: 'index' });
-});
-
 app.post("/api/login", (req, res) => {
-    const { phoneNumber } = req.body;
-  
-    UserModel.findOne({ phoneNumber })
+    const user= {
+      phoneNumber: req.body.phoneNumber
+    }
+    UserModel.findOne({ phoneNumber: user.phoneNumber })
       .then((user) => {
         if (user) {
-            res.redirect('/index');
+          const saldo = user.saldo;
+          res.render('index', { title: 'index', saldo: saldo });
         } else {
             const alertMessage = "Data tidak ditemukan! Silahkan login kembali";
             const script = `<script>alert('${alertMessage}'); window.location.href = '/';</script>`;
@@ -76,7 +74,7 @@ app.post("/api/login", (req, res) => {
       })
       .catch((err) => {
         console.error(err);
-        res.status(500).send({ message: "Gagal mendaftarkan pengguna" });
+        res.status(500).send({ message: "Gagal mendaftarkan akun" });
       });
   });
   
