@@ -2,13 +2,15 @@ const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
   phoneNumber: {
-    type: String,
-    required:'please enter your phone number'
+    type: String
   },
   saldo: {
     type:Number,
     default:0
-    }
+    },
+  pin:{
+    type:Number,
+  }
 });
 
 
