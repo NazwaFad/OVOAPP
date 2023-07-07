@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <Title>
+        TOPUP
+    </Title>
+    <meta name="viewport" content="width=device-width" , initial-scale=1, shrink-to-fitano>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="/Assets/ovo icon.png">
+    <link rel="stylesheet" href="/css/data topup.css">
+</head>
+
+<body>
+    <div class="secbody1 ">
+        <br><br><br>
+        <div class="container-fluid ">
+            <a href="/index"><img src="/Assets/backwhite.png" width="50px" height="50px" alt="back" class="back"></a>
+            <h1 class="text-white fw-bold ovo d-flex topup d-flex justify-content-center" alt="topup">Top Up</h1>
+        </div>
+        <br><br><br>
+    </div>
+
+    <div class="container-fluid box2">
+        <br>
+        <h1>Top Up ke</h1>
+
+        <div class="container d-flex justify-center boxsaldo shadow"><img src="Assets/ovoicon.jpg" alt="ovo icon" class="gambarovo">
+            <h1 class="fw-bold fontsakun">OVO Cash</h1>
+            <h4 class="fontssaldo"><%= saldo %></h4>
+        </div>
+        <br><br><br>
+    </div>
+
+    <br>
+
+    <div class="container-fluid box2">
+        <br>
+        <h1>Pilih Nominal Top-Up</h1>
+        <br><br>
+    <form action="/api/topup" method="POST">
+            <br>
+            <div class="mb-3 boxinput">
+                <label for="exampleFormControlInput1" class="form-label d-flex justify-content-center">Atau Masukkan Nominal Top Up Disini</label>
+                <input name="topupammount" type="number" class="form-control d-flex justify-content-center" id="exampleFormControlInput1" placeholder="Minimal 10.000">
+            </div>
+            <br><br><br>
+    </div>
+    <br>
+
+    <div class="container-fluid box3">
+        <div class="">
+            <br><br>
+            <h1 class="text-center fw-bold">
+                Pilih metode Pembayaran
+            </h1>
+            <br><br>
+
+            <p>
+                <button class="banktranfer  btn btn-outline-dark border-black container-fluid text-start" type="button" data-bs-toggle="collapse" data-bs-target="#banktranfer" aria-expanded="false" aria-controls="collapseExample">
+                <h5 class="text-start trf">Bank Tranfer</h5>
+                <hr>
+                <div class="d-flex justify-content-end" >
+                  <img src="assets/bca png.png" alt="bca" width="100" height="70" class="trf" >
+                  <img src="assets/mandiri.png" alt="mandiri" width="130" height="70" class="trf" >
+                  <img src="assets/bri.png" alt="bri" width="130" height="50" class="trf" >
+                  <img src="assets/bsi.png" alt="bsi" width="130" height="50" class="trf" >
+                  <img src="assets/bni.png" alt="bni" width="130" height="50" class="trf" >
+                </div>
+                 </button>
+            </p>
+
+            <div class="collapse" id="banktranfer">
+                <div class="">
+
+                    <input type="radio" class="btn-check" name="options1" id="bca" autocomplete="off" required="false">
+                    <label class="btn btn-light btn-outline-dark boxbank border shadow" for="bca">
+                    <img src="assets/bca png.png" alt="bca" width="60" height="50" class="trf">
+                  <hr>
+                  <div class="text-center"> Bank Central Asia</div>
+                </label>
+
+                    <input type="radio" class="btn-check" name="options1" id="mandiri" autocomplete="off" required="false">
+                    <label class="btn btn-light btn-outline-dark boxbank border shadow" for="mandiri">
+                <img src="assets/mandiri.png" alt="mandiri" width="90" height="50" class="trf">
+              <hr>
+              <div class="text-center"> Bank Mandiri</div>
+            </label>
+
+                    <input type="radio" class="btn-check" name="options1" id="bri" autocomplete="off" required="false">
+                    <label class="btn btn-light btn-outline-dark boxbank border shadow" for="bri">
+                <img src="assets/bri.png" alt="mandiri" width="100" height="50" class="trf">
+              <hr>
+              <div class="text-center"> Bank Rakyat Indonesia</div>
+            </label>
+
+                    <input type="radio" class="btn-check" name="options1" id="bsi" autocomplete="off" required="false">
+                    <label class="btn btn-light btn-outline-dark boxbank border shadow" for="bsi">
+                <img src="assets/bsi.png" alt="bsi" width="130" height="50" class="trf">
+              <hr>
+              <div class="text-center"> Bank Syariah Indonesia</div>
+            </label>
+
+                    <input type="radio" class="btn-check" name="options1" id="bni" autocomplete="off" required="false">
+                    <label class="btn btn-light btn-outline-dark boxbank border shadow" for="bni">
+                <img src="assets/bni.png" alt="bni" width="130" height="50" class="trf">
+              <hr>
+              <div class="text-center"> Bank Negara Indoensia</div>
+            </label>
+
+                </div>
+            </div>
+
+            <br> <br>
+
+</div>
+            <br>
+            <button type="submit" class="belisekarang container-fluid" id="buynow" > 
+              <h5>Top Up Sekarang</h5>
+            </button>
+            <br><br>
+        </div>
+</form>          
+</body>
+
+<footer>
+
+</footer>
+
+</html>
