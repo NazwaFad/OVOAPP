@@ -1,0 +1,68 @@
+body {
+    background-color: whitesmoke;
+}
+
+.secbody1 {
+    background-image: url("/Assets/ovoBackgroundhome.png");
+    height: auto;
+    width: auto;
+    margin-top: -20px;
+}
+
+.topup {
+    margin-top: -50px;
+}
+
+.back {
+    margin-left: 30px;
+}
+
+.box2 {
+    background-color: white;
+}
+
+.boxsaldo {
+    width: 1000px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.gambarovo {
+    width: 100px;
+    height: 80px;
+    border-radius: 20px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.fontsakun {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.fontssaldo {
+    margin-left: -180px;
+    margin-top: 100px;
+}
+
+.boxnominal {
+    margin-left: 50px;
+    border-radius: 60px;
+}
+
+.form-control {
+    align-content: center;
+}
+
+.box3 {
+    background-color: white;
+}
+
+.boxbank {
+    margin-left: 50px;
+}
+
+.boxnominal.active {
+    background-color: plum;
+}

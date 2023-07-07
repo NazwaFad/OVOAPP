@@ -92,3 +92,25 @@ body {
 .lineup1 {
     background-color: white;
 }
+
+.box3 {
+    background-color: white;
+}
+
+.fontspromo {
+    padding-top: 80px;
+    margin-left: 40px;
+}
+
+.Linkpromo {
+    margin-top: -60px;
+    margin-right: 20px;
+    font-size: 30px;
+    color: #60DFE3;
+    text-decoration: none;
+}
+
+.ukuranimage {
+    width: 500px;
+    height: 750px;
+}
